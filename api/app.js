@@ -7,4 +7,4 @@ app.post('/customer', (req, res) => res.status(200).send('Customer created'));
 app.post('/rapidsteptest', (req, res) => res.status(200).send('Saved'));
 app.get('/riskscore/:email', (req, res) => res.status(200).json({ score: 1 }));
 
-module.exports = app; 
+module.exports = serverless(app);
